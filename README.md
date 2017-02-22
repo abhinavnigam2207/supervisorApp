@@ -4,11 +4,11 @@
 
 Steps to run the application:
 
-Step 1: Install NPM and Git.
-Step 2: Open 2 instances of command prompt/Gitbash on the location where zip is downloaded and extracted,
-Step 3: In one instance run command "npm install -g json-server" and then run "json-server --watch workers.json"
-Step 4: In other instance run command "npm start".
-Step 5: Open chrome browser and run application on localhost:8000
+Step 1: Install NPM and Git.  
+Step 2: Open 2 instances of command prompt/Gitbash on the location where zip is downloaded and extracted.  
+Step 3: In one instance run command "npm install -g json-server" and then run "json-server --watch workers.json"  
+Step 4: In other instance run command "npm start".  
+Step 5: Open chrome browser and run application on localhost:8000  
 
 
 
@@ -46,14 +46,14 @@ Worker UI
 - Worker list should be live, so when the task is completed after the given duration then worker UI should be updated with “Available” status.
 
 
-Ability to select a worker in the list
+Ability to select a worker in the list  
 Once Supervisor clicks on a worker then the worker should get selected, and should be shown with some different background.
 
 
-Ability to ring the bell
+Ability to ring the bell  
 Supervisor may not want to go through the list and just want to ring the bell to know the first available worker. A button can be used to ring the bell, once Supervisor rings the bell then first available worker detail appear in the browser alert box.
 This functionality should be asynchronous, Supervisor should be able to use the application until the first available worker appear in the alert box.
 
 
-Ability to assign a task to worker
+Ability to assign a task to worker  
 Once an available worker is selected in the list, the Supervisor may want to assign a task to him/her. Task must have a name and the duration to execute the task. The button to assign the task should be disabled until the Task name is entered.
