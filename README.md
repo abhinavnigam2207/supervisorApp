@@ -1,5 +1,19 @@
 # supervisorApp
 
+
+
+Steps to run the application:
+
+Step 1: Install NPM and Git.
+Step 2: Open 2 instances of command prompt/Gitbash on the location where zip is downloaded and extracted,
+Step 3: In one instance run command "npm install -g json-server" and then run "json-server --watch workers.json"
+Step 4: In other instance run command "npm start".
+Step 5: Open chrome browser and run application on localhost:8000
+
+
+
+#App Description
+
 There is a company named as “Cotton-o-Mill” which has some workers and has only one supervisor.
 You got an order from the company to build a web application for its supervisor.
 Using application, Supervisor should be able to:
