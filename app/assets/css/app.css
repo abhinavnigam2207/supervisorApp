@@ -1,0 +1,111 @@
+/* app css stylesheet */
+
+#mainCntr {
+	margin: 0 auto;
+	width: 100%;
+}
+
+#headerCntr {
+	position: relative;
+	width: 100%;
+}
+
+#contentCntr {
+	width: 100%;
+}
+
+#footerCntr {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.topBox {
+	padding: 13px 0 16px;
+	border-bottom: 1px solid #d7d8d8;
+	background-color: #fdfefe;
+}
+
+.topBox .rightmenu {
+    width: auto;
+    float: right;
+    margin-right: -14px; 
+}
+
+.topBox .rightmenu .accountbox {
+      float: right;
+      margin-top: 15px;
+      margin-left: 15px;
+}
+
+.topBox .rightmenu .accountbox ul li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    color: #f04e30;
+}
+
+.copyrightBox{
+	background-color: #c9ccc3;
+	height: 50px;
+	text-align: center;
+}
+
+.copyrightBox .footer-textbox{
+	padding-top: 15px;
+}
+
+.woker-section{
+	border: solid 1px #c9ccc3;
+	padding: 20px 10px;
+	max-height: 400px !important;
+    overflow-y: scroll;
+}
+
+.woker-section .worker-div{
+    padding: 10px;
+    border: solid 1px #c9ccc3;
+    margin: 10px 5px;
+}
+
+.woker-section .worker-div:hover{
+    padding: 10px;
+    border: solid 1px #c9ccc3;
+    margin: 10px 5px;
+    background-color: #d9e8f9;
+}
+
+.woker-section .worker-div.active{
+    padding: 10px;
+    border: solid 1px #c9ccc3;
+    margin: 10px 5px;
+    background-color: #cbddf2;
+}
+
+.container.mg-t20.btn-section{
+	padding: 0% 5%;
+}
+
+.mg-t20{
+	margin-top: 20px;
+}
+.mg-b20{
+	margin-bottom: 20px;
+}
+
+.text-grey{
+	color: #c9ccc3;
+}
+
+.wid-30{
+	width: 30% !important;
+}
+
+.wid-10{
+	width: 10% !important;
+}
+
+img.logoImg{
+	height: 60px;
+	width: 150px;
+}

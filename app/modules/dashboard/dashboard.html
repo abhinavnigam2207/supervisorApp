@@ -1,0 +1,45 @@
+<!-- / dashboard section start\ -->
+<section id="dashboardSectn">
+
+	<div class="container mg-t20 mg-b20">
+		<div class="row">
+			<div class="col-lg-9 col-md-9 col-sm-8 col-xs-6">
+				<input class="form-control" placeholder="Seach worker by Name or Task name" ng-model="searchQuery">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<button class="btn btn-primary" ng-click="ringBell()">
+				    <i class="fa fa-bell" aria-hidden="true"></i>
+				    Ring the bell
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row woker-section">
+			<div class="worker-div" ng-repeat="worker in workers | filter : {$: searchQuery}" ng-click="select($index, worker)" ng-class="{active: $index == selected}">
+				<worker-info worker="worker"></worker-info>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mg-t20 btn-section" ng-show="selectedWorker && !selectedWorker.taskAssigned">
+		<strong> Assign task to '{{selectedWorker.name}}'</strong>
+		<div class="row mg-t20">
+			<label>Task Name</label>
+			<input type="text" class="form-control wid-30" ng-model="assignTask.name" placeholder="Task Name">
+		</div>
+		<div class="row mg-t20">
+			<label>Task duration (in Seconds)</label>
+			<input type="number" min="0" class="form-control wid-30" ng-model="assignTask.duration" placeholder="Task Duration"/>
+		</div>
+		<div class="row mg-t20 mg-b20">
+			<button ng-disabled="!assignTask.name" class="btn btn-primary col-lg-3 col-md-3 col-sm-4 col-xs-6" ng-click="assignTaskToEmp()">
+				<i class="fa fa-tasks" aria-hidden="true"></i>
+				Assign Task
+			</button>
+		</div>
+	</div>
+
+</section>
+<!-- \ dashboard section end/
